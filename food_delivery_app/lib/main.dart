@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_delivery_app/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -91,7 +92,7 @@ class LoginScreen extends StatelessWidget {
                     elevation: 0,
                   ),
                   onPressed: () {
-                    // Handle continue with email
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeScreen()));
                   },
                   child: const Text(
                     'Continue with Email',
@@ -116,7 +117,7 @@ class LoginScreen extends StatelessWidget {
                     elevation: 0,
                   ),
                   onPressed: () {
-                    // Handle continue with Google
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeScreen()));
                   },
                   child: const Text(
                     'Continue with Google',
@@ -141,7 +142,7 @@ class LoginScreen extends StatelessWidget {
                     elevation: 0,
                   ),
                   onPressed: () {
-                    // Handle continue as guest
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeScreen()));
                   },
                   child: const Text(
                     'Continue as Guest',
